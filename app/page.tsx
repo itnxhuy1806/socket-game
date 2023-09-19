@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import { useEffect } from "react";
 import { io } from "socket.io-client";
@@ -6,24 +6,23 @@ import { io } from "socket.io-client";
 const socket = io("localhost:3000/", { autoConnect: false });
 
 export default function Home() {
-
-// useEffect(() => {
-//   socket.connect()
-//     socket.on("connect", function () {
-//       console.log("Connected");
-//       socket.emit("events", { test: "test" });
-//       socket.emit("identity", 1, (response) => console.log("Identity:", response));
-//     });
-//     socket.on("events", function (data) {
-//       console.log("event", data);
-//     });
-//     socket.on("exception", function (data) {
-//       console.log("event", data);
-//     });
-//     socket.on("disconnect", function () {
-//       console.log("Disconnected");
-//     });
-//   }, []);
+  // useEffect(() => {
+  //   socket.connect()
+  //     socket.on("connect", function () {
+  //       console.log("Connected");
+  //       socket.emit("events", { test: "test" });
+  //       socket.emit("identity", 1, (response) => console.log("Identity:", response));
+  //     });
+  //     socket.on("events", function (data) {
+  //       console.log("event", data);
+  //     });
+  //     socket.on("exception", function (data) {
+  //       console.log("event", data);
+  //     });
+  //     socket.on("disconnect", function () {
+  //       console.log("Disconnected");
+  //     });
+  //   }, []);
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
